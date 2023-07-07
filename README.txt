@@ -1,1 +1,1 @@
-我要学python
+[我要学python]
