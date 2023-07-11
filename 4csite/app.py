@@ -72,7 +72,7 @@ def add_phone():
 # 删除一条信息
 @app.route('/del/phone')
 def del_phone():
-    delKey = request.args.get('del_key')
+    delKey = request.args.get('delid')
     #根据key值删除数据库中内容
     #delete from *table name* where id=1
 

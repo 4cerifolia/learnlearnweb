@@ -120,13 +120,14 @@
           <tbody>
             {% for row in data_list %}
             <tr>
+              <!-- cursor.execute('select id,name,tel,short_tel,mobile,email,depart_id from employeelist order by id desc') -->
               <th scope="row">{{row.id}}</th>
               <td>{{row.name}}</td>
               <td>{{row.tel}}</td>
-              <td>{{row.shorttel}}</td>
+              <td>{{row.short_tel}}</td>
               <td>{{row.mobile}}</td>
               <td>{{row.email}}</td>
-              <td>{{row.departid}}</td>
+              <td>{{row.depart_id}}</td>
               <td><a class="btn btn-danger" href="/del/phone?delid={{row.id}}">删除</a></td>
             </tr>
             {% endfor %}
